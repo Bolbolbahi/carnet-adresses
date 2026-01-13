@@ -49,18 +49,33 @@ La table des contacts sera créée automatiquement
 Vous pouvez maintenant ajouter vos premiers contacts!
 
 📁 Structure du projet
+
 carnet-adresses/
 │
-├── main.py                 # Fichier principal de l'application
-├── carnet_adresses.db      # Base de données SQLite (créée automatiquement)
-├── README.md               # Ce fichier
-├── requirements.txt        # Dépendances Python
+├── 📄 main.py                    
 │
-├── docs/                   # Documentation supplémentaire
-│   └── screenshots/        # Captures d'écran
+├── 📁 src/
+│   ├── 📁 database/              
+│   │   ├── __init__.py
+│   │   └── manager.py           [DatabaseManager]
+│   │
+│   └── 📁 ui/                    
+│       ├── __init__.py
+│       ├── main_window.py       [MainWindow]
+│       └── dialogs.py           [ContactDialog]
 │
-└── tests/                  # Tests unitaires (optionnel)
-    └── test_database.py
+├── 📁 tests/                    
+│   ├── __init__.py
+│   └── test_database.py
+│
+├── 📁 docs/                     
+│   ├── screenshots/
+│   └── ARCHITECTURE.md
+│
+├── 📄 README.md                 
+├── 📄 requirements.txt           
+├── 📄 .gitignore                 
+└── 📄 LICENSE                    
 
 Utilisation
 Ajouter un contact
