@@ -1,0 +1,3 @@
+# Carnet d'Adresses
+Application de gestion de contacts avec PyQt6 et SQLite.
+En développement...
